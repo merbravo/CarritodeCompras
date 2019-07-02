@@ -2,10 +2,11 @@
 function pulsar() {
 alert("El producto seleccionado se ha añadido a tu carrito de compras");
 }
+
 </SCRIPT>
+    
 
 <main id="productos" class="container" style="background-color: #E16060">
-
     {{-- <section class="jumbotron text-center">
       <div class="container">
         <h1 class="jumbotron-heading">Album example</h1>
@@ -17,7 +18,7 @@ alert("El producto seleccionado se ha añadido a tu carrito de compras");
       </div>
     </section> --}}
 
-    <h2 style="text-align: center">PRODUCTOS</h2>
+    <h2 style="text-align: center; color: #520713; font-size: 40px; font-family:cursive;">PRODUCTOS</h2>
 
     <div class="album py-5 bg-light" style="background-color: #E16060">
       <div class="container">
@@ -33,8 +34,8 @@ alert("El producto seleccionado se ha añadido a tu carrito de compras");
                 Tookang Mujer Camisa De Entrenamiento Sudaderas con Capucha De Manga Larga</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary" onclick="pulsar()">Comprar</button>
-                    <input font size="16px" type="text" class="form-control" id="cantidad0" name="cantidad0" placeholder="Cantidad ">
+                    <a href="#" class="btn btn-success producto" precio="15.00" titulo="Tookang"  role="button">Comprar</a>
+                    
                   </div>
                   <small class="text-muted">$15.00</small>
                 </div>
@@ -51,8 +52,8 @@ alert("El producto seleccionado se ha añadido a tu carrito de compras");
                 Urban GoCo Falda Mujer Elástica Plisada Básica Patinador Multifuncional Corto Falda</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary" onclick="pulsar()">Comprar</button>
-                    <input type="text" class="form-control" id="cantidad1" name="cantidad1" placeholder="Cantidad ">
+                    <a href="#" class="btn btn-success producto" precio="20.00" titulo="Urabn GoCo"  role="button">Comprar</a>
+                    
                   </div>
                   <small class="text-muted">$20.00</small>
                 </div>
@@ -66,11 +67,11 @@ alert("El producto seleccionado se ha añadido a tu carrito de compras");
               <div class="card-body">
                 <p class="card-text">
                 <h3>Logobeing</h3>
-                Logobeing Zapatos Mujer Botines Mujer Tacon Medio Botas de Cordones Seguridad Zapatillas-Botas </p>
+                Logobeing Zapatos Mujer Botines Mujer Tacon Medio Botas de Cordones Seguridad</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary" onclick="pulsar()">Comprar</button>
-                    <input type="text" class="form-control" id="cantidad2" name="cantidad2" placeholder="Cantidad ">
+                    <a href="#" class="btn btn-success producto" precio="36.50" titulo="Logobeing"  role="button">Comprar</a>
+                    
                   </div>
                   <small class="text-muted">$36.50</small>
                 </div>
@@ -79,7 +80,7 @@ alert("El producto seleccionado se ha añadido a tu carrito de compras");
           </div>
 
           <div class="col-md-4">
-            <div class="card mb-4 shadow-sm"  width="300" height="200">
+            <div class="card mb-4 shadow-sm">
                 <img class="card-img-top" src="img/13.jpg" alt="Card image cap" width="300" height="200">
               {{-- <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap"> --}}
               <div class="card-body">
@@ -88,8 +89,8 @@ alert("El producto seleccionado se ha añadido a tu carrito de compras");
                   Minetom Mujer Moda Otoño Invierno Dedo Puntiagudo Estiletes Lace-Up Tobillo Botas Zapatos De Tacon</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary" onclick="pulsar()">Comprar</button>
-                    <input type="text" class="form-control" id="cantidad3" name="cantidad3" placeholder="Cantidad ">
+                    <a href="#" class="btn btn-success producto" precio="35.00" titulo="Minetom"  role="button">Comprar</a>
+                    
                   </div>
                   <small class="text-muted">$35.00</small>
                 </div>
@@ -97,8 +98,7 @@ alert("El producto seleccionado se ha añadido a tu carrito de compras");
             </div>
           </div>
           <div class="col-md-4">
-            <div class="card mb-4 shadow-sm" width="300" height=
-            "200">
+            <div class="card mb-4 shadow-sm">
                 <img class="card-img-top" src="img/15.jpg" alt="Card image cap" width="300" height="200">
               {{-- <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap"> --}}
               <div class="card-body">
@@ -108,12 +108,11 @@ alert("El producto seleccionado se ha añadido a tu carrito de compras");
                 <br>
                 <br>
                 <br>
-                <br>
               </p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary" onclick="pulsar()">Comprar</button>
-                    <input type="text" class="form-control" id="cantidad4" name="cantidad4" placeholder="Cantidad ">
+                    <a href="#" class="btn btn-success producto" precio="25.00" titulo="oodji"  role="button">Comprar</a>
+                    
                   </div>
                   <small class="text-muted">$25.00</small>
                 </div>
@@ -128,11 +127,10 @@ alert("El producto seleccionado se ha añadido a tu carrito de compras");
                 <p class="card-text">
                 <h3>Minetom</h3>
                 Minetom Mujeres Dos Piezas Traje De Negocios Formal Blazer Y Pantalones Conjunto Manga Larga</p>
-                <br>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary" onclick="pulsar()">Comprar</button>
-                    <input type="text" class="form-control" id="cantidad5" name="cantidad5" placeholder="Cantidad ">
+                    <a href="#" class="btn btn-success producto" precio="75.00" titulo="Minetom"  role="button">Comprar</a>
+                    
                   </div>
                   <small class="text-muted">$75.00</small>
                 </div>
@@ -142,6 +140,35 @@ alert("El producto seleccionado se ha añadido a tu carrito de compras");
           
         </div>
       </div>
+
     </div>
 
+
+
   </main>
+  <script src="{{ asset('https://code.jquery.com/jquery-2.1.4.min.js') }}"></script>
+  <script src="{{ asset('js/minicart.js')}}"></script>
+  <script>
+    $('.producto').on('click',function(e){
+        e.stopPropagation();
+        paypal.minicart.cart.add({
+        business: 'uhperezoscar@gmail.com', // Cuenta paypal para recibir el dinero
+        item_name: $(this).attr("titulo"),
+        amount: $(this).attr("precio"),
+        currency_code: 'USD',
+      
+      });
+    })
+// configuración inicial del carrito 
+    paypal.minicart.render({
+    strings:{
+      button:'Pagar'
+     ,buttonAlt: "Total"
+     ,subtotal: 'Total:'
+     ,empty: 'No hay productos en el carrito'
+    }
+    });
+    // Eventos para agregar productos al carrito
+    // 
+    
+  </script>

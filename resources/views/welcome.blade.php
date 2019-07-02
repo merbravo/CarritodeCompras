@@ -4,14 +4,17 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
+
         <title>Laravel</title>
 
         <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+        <script src="{{ asset('https://code.jquery.com/jquery-2.1.4.min.js') }}"></script>
+        <script src="{{asset('js/minicart.js')}}"></script>
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-   
+
 
         <!-- Styles -->
         <style>
@@ -76,16 +79,16 @@
             
        
 
-        <div class="flex-center position-ref full-height" style="font-size: 30px">
+        <div class="flex-center position-ref full-height" style="font-size: 30px" >
             @if (Route::has('login'))
-                <div class="top-right links" >
+                <div class="top-right links" style="color: #520713;font-size: 20px; font-family:cursive;">
                     @auth
-                        <a href="{{ url('/home') }}">Home</a>
+                        <a href="{{ url('/home') }}">Inicio</a>
                     @else
-                        <a href="{{ route('login') }}">Login</a>
+                        <a href="{{ route('login') }}">Iniciar Sesión</a>
 
                         @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
+                            <a href="{{ route('register') }}">Registrarse</a>
                         @endif
                     @endauth
                 </div>
@@ -109,7 +112,7 @@
             <div class="col-md-6">
               <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"  style="background-color:#FFFFFF; ;width: 100%; height: 100%" >
                 <div class="col p-4 d-flex flex-column position-static">
-                  <strong class="d-inline-block mb-2 text-primary">World</strong>
+                  <strong class="d-inline-block mb-2 text-primary">Mundo</strong>
                   <h3 class="mb-0">Acerca de:</h3>
                   <p class="card-text mb-auto">La tienda de ropa NORMITEX es es el lugar de referencia para encontrar la última moda en vestimenta para damas ya que cuenta con diversas prendas de las marcas más conocidas y de los diseñadores más famosos.</p>
                 </div>
@@ -124,7 +127,7 @@
     <div class="col-md-6">
       <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"  style="background-color:#FFFFFF ;width: 100%; height: 100%">
         <div class="col p-4 d-flex flex-column position-static">
-          <strong class="d-inline-block mb-2 text-success">Design</strong>
+          <strong class="d-inline-block mb-2 text-success">Diseño</strong>
           <h3 class="mb-0">Viste a la moda:</h3>
           <p class="mb-auto">No importa tu edad o estilo, seguro que encuentras ropa perfecta que se adapte a tus gustos y estilo de vida. Encuentra la ropa que estabas buscando sin importar la ocasión casual o formal y dale un nuevo aire a tu armario con lo último de la temporada.</p>
         </div>
@@ -141,7 +144,7 @@
     <div class="col-md-6">
       <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"  style="background-color:#FFFFFF ;width: 100%; height: 100%"  >
         <div class="col p-4 d-flex flex-column position-static">
-          <strong class="d-inline-block mb-2 text-primary">World</strong>
+          <strong class="d-inline-block mb-2 text-primary">Mundo</strong>
           <h3 class="mb-0">Tendencias:</h3>
           <p class="card-text mb-auto"> Descubre las últimas tendencias de temporada y elige entre una amplia selección para potenciar y renovar tu armario con piezas y estilos clave.</p>
         </div>
@@ -156,7 +159,7 @@
     <div class="col-md-6">
       <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"  style="background-color:#FFFFFF ;width: 100%; height: 100%" >
         <div class="col p-4 d-flex flex-column position-static">
-          <strong class="d-inline-block mb-2 text-success">Design</strong>
+          <strong class="d-inline-block mb-2 text-success">Diseño</strong>
           <h3 class="mb-0"> Variedad:</h3>
           <p class="mb-auto">Encontrarás desde tops y pantalones, a ropa de abrigo, ropa deportiva, ropa interior, ropa de dormir y trajes de baño, ¡la tienda de ropa de NORMITEX tiene todo lo que estás buscando!</p>
         </div>
